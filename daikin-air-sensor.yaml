@@ -23,20 +23,19 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "rDykiwoMUJ4gNCdvZjxf5RiJd0smklnIC9Utg+txKSg="
+    key: "your-api-key"
 
 ota:
   - platform: esphome
-    password: "ef6cdb69c11504e3aba4152e2eaa852e"
+    password: "ota-password"
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+  ssid: your_wifi_ssid
+  password: your_wifi_password
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Daikin-Air-Sensor"
-    password: "Fhlu0Cj1gQTK"
 
 captive_portal:
 web_server:
